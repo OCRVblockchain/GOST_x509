@@ -1,10 +1,3 @@
-# Генерация ГОСТ 34.10-2012 256/512 x509 сертификатов
-
-Построена на основе стандартного x509 пакета и GoGOST  
-go.cypherpunks.ru/gogost
-
-#### Example
-```go
 package main
 
 import (
@@ -47,7 +40,8 @@ func GenerateCert() {
 
 	fl, err := os.Create("cert.pem")
 	if err != nil {
-		panic(err)
+		log.Fatalln(err)
+		return
 	}
 
 	pem.Encode(fl, &pem.Block{Type: "CERTIFICATE", Bytes: cert})
@@ -92,5 +86,3 @@ func GeneratePublicKey() {
 
 	pem.Encode(flp, &pem.Block{Type: "PUBLIC KEY", Bytes: []byte(privateKey)})
 }
-
-```

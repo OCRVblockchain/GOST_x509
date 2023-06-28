@@ -1,0 +1,15 @@
+# github.com/ftomza/gogost v0.0.0-20200923131839-93b36ba10d5f
+## explicit; go 1.12
+github.com/ftomza/gogost/gost28147
+github.com/ftomza/gogost/gost34112012256
+github.com/ftomza/gogost/gost34112012512
+github.com/ftomza/gogost/gost341194
+github.com/ftomza/gogost/gost3412128
+github.com/ftomza/gogost/gost341264
+github.com/ftomza/gogost/internal/gost34112012
+# golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d
+## explicit; go 1.17
+golang.org/x/crypto/cryptobyte
+golang.org/x/crypto/cryptobyte/asn1
+golang.org/x/crypto/hkdf
+golang.org/x/crypto/pbkdf2
