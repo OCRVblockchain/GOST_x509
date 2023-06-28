@@ -2,10 +2,10 @@ package template
 
 import (
 	"crypto/rand"
-	"gost-x509/cryptoGost/gost/gost3410"
-	"gost-x509/cryptoGost/gost/gost34112012256"
-	gost509 "gost-x509/cryptoGost/x509"
-	"gost-x509/cryptoGost/x509/pkix"
+	"gostx509/cryptoGost/gost/gost3410"
+	"gostx509/cryptoGost/gost/gost34112012256"
+	gost509 "gostx509/cryptoGost/x509"
+	"gostx509/cryptoGost/x509/pkix"
 	"math/big"
 	"time"
 )

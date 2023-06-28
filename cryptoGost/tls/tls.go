@@ -21,7 +21,7 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
-	x509 "gost-x509/cryptoGost/x509"
+	x509 "gostx509/cryptoGost/x509"
 	"net"
 	"os"
 	"strings"

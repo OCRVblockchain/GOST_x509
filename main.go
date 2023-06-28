@@ -3,9 +3,9 @@ package gost_x509
 import (
 	"crypto/rand"
 	"encoding/asn1"
-	"gost-x509/cryptoGost/gost/gost3410"
-	"gost-x509/cryptoGost/template"
-	gost509 "gost-x509/cryptoGost/x509"
+	"gostx509/cryptoGost/gost/gost3410"
+	"gostx509/cryptoGost/template"
+	x509 "gostx509/cryptoGost/x509"
 	"io"
 	"time"
 )
@@ -39,7 +39,7 @@ func GenerateX509Cert(curve *gost3410.Curve, x509template *template.X509Template
 		return nil, err
 	}
 
-	caBytes, err := gost509.CreateCertificate(rand.Reader, ca, ca, pub, prv)
+	caBytes, err := x509.CreateCertificate(rand.Reader, ca, ca, pub, prv)
 	if err != nil {
 		return nil, err
 	}

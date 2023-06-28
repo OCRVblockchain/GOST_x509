@@ -14,7 +14,7 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 	"fmt"
-	"gost-x509/cryptoGost/cpu"
+	"gostx509/cryptoGost/cpu"
 	"hash"
 	"runtime"
 

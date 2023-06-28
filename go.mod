@@ -1,4 +1,4 @@
-module gost-x509
+module gostx509
 
 go 1.18
 

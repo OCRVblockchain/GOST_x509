@@ -13,7 +13,7 @@ import (
 	"crypto/subtle"
 	"errors"
 	"fmt"
-	x509 "gost-x509/cryptoGost/x509"
+	x509 "gostx509/cryptoGost/x509"
 	"hash"
 	"io"
 	"sync/atomic"

@@ -20,7 +20,7 @@ import (
 	"encoding/asn1"
 	"errors"
 	"fmt"
-	"gost-x509/cryptoGost/x509/pkix"
+	"gostx509/cryptoGost/x509/pkix"
 	"io"
 	"math/big"
 )

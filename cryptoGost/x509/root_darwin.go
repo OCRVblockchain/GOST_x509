@@ -6,7 +6,7 @@ package gost509
 
 import (
 	"errors"
-	macOS "gost-x509/cryptoGost/x509/internal/macos"
+	macOS "gostx509/cryptoGost/x509/internal/macos"
 )
 
 func (c *Certificate) systemVerify(opts *VerifyOptions) (chains [][]*Certificate, err error) {

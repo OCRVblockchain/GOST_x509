@@ -20,7 +20,7 @@ package gost34112012256
 import (
 	"hash"
 
-	"gost-x509/cryptoGost/gost/internal/gost34112012"
+	"gostx509/cryptoGost/gost/internal/gost34112012"
 )
 
 const (
