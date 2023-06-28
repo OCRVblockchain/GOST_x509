@@ -9,9 +9,9 @@ package main
 
 import (
 	"encoding/pem"
-	gost_x509 "gost-x509"
-	"gost-x509/cryptoGost/gost/gost3410"
-	"gost-x509/cryptoGost/template"
+	x509 "gostx509"
+	"gostx509/cryptoGost/gost/gost3410"
+	"gostx509/cryptoGost/template"
 	"log"
 	"os"
 	"time"
@@ -39,7 +39,7 @@ func GenerateCert() {
 	isCA := true
 	expiry := 3650 * 24 * time.Hour
 
-	cert, err := gost_x509.GenerateX509Cert(curve, &tmpl, expiry, isCA)
+	cert, err := x509.GenerateX509Cert(curve, &tmpl, expiry, isCA)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -47,7 +47,8 @@ func GenerateCert() {
 
 	fl, err := os.Create("cert.pem")
 	if err != nil {
-		panic(err)
+		log.Fatalln(err)
+		return
 	}
 
 	pem.Encode(fl, &pem.Block{Type: "CERTIFICATE", Bytes: cert})
@@ -58,7 +59,7 @@ func GeneratePrivateKey() {
 	paramset := gost3410.OidTc26Gost34102012256ParamSetA
 	algorithm := gost3410.OidTc26Gost34112012256
 
-	privateKey, err := gost_x509.GeneratePrivateKey(curve, paramset, algorithm)
+	privateKey, err := x509.GeneratePrivateKey(curve, paramset, algorithm)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -78,7 +79,7 @@ func GeneratePublicKey() {
 	paramset := gost3410.OidTc26Gost34102012256ParamSetA
 	algorithm := gost3410.OidTc26Gost34112012256
 
-	privateKey, err := gost_x509.GeneratePublicKey(curve, paramset, algorithm)
+	privateKey, err := x509.GeneratePublicKey(curve, paramset, algorithm)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -92,5 +93,6 @@ func GeneratePublicKey() {
 
 	pem.Encode(flp, &pem.Block{Type: "PUBLIC KEY", Bytes: []byte(privateKey)})
 }
+
 
 ```
