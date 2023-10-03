@@ -14,7 +14,7 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 	"fmt"
-	"gostx509/cryptoGost/cpu"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/cpu"
 	"hash"
 	"runtime"
 

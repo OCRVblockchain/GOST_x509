@@ -19,7 +19,7 @@ import (
 	"crypto"
 	"encoding/asn1"
 	"fmt"
-	"gostx509/cryptoGost/x509/pkix"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/x509/pkix"
 	"math/big"
 )
 

@@ -12,7 +12,7 @@ package gost509
 import (
 	"crypto/rand"
 	"encoding/pem"
-	"gostx509/cryptoGost/x509/pkix"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/x509/pkix"
 	"math/big"
 	"strings"
 	"time"

@@ -11,7 +11,7 @@ import (
 	"encoding/asn1"
 	"errors"
 	"fmt"
-	"gostx509/cryptoGost/x509/pkix"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/x509/pkix"
 )
 
 // pkcs8 reflects an ASN.1, PKCS #8 PrivateKey. See

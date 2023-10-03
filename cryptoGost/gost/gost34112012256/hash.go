@@ -20,7 +20,7 @@ package gost34112012256
 import (
 	"hash"
 
-	"gostx509/cryptoGost/gost/internal/gost34112012"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/gost/internal/gost34112012"
 )
 
 const (

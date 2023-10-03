@@ -1,4 +1,4 @@
-module gostx509
+module github.com/OCRVblockchain/GOST_x509
 
 go 1.18
 

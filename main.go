@@ -3,9 +3,9 @@ package gost_x509
 import (
 	"crypto/rand"
 	"encoding/asn1"
-	"gostx509/cryptoGost/gost/gost3410"
-	"gostx509/cryptoGost/template"
-	x509 "gostx509/cryptoGost/x509"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/gost/gost3410"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/template"
+	x509 "github.com/OCRVblockchain/GOST_x509/cryptoGost/x509"
 	"io"
 	"time"
 )

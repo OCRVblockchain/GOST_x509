@@ -2,9 +2,9 @@ package main
 
 import (
 	"encoding/pem"
-	x509 "gostx509"
-	"gostx509/cryptoGost/gost/gost3410"
-	"gostx509/cryptoGost/template"
+	x509 "github.com/OCRVblockchain/GOST_x509"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/gost/gost3410"
+	"github.com/OCRVblockchain/GOST_x509/cryptoGost/template"
 	"log"
 	"os"
 	"time"

@@ -17,7 +17,7 @@ import (
 	"crypto/sha512"
 	"errors"
 	"fmt"
-	x509 "gostx509/cryptoGost/x509"
+	x509 "github.com/OCRVblockchain/GOST_x509/cryptoGost/x509"
 	"io"
 	"net"
 	"strings"
